@@ -2,21 +2,24 @@ Source: mingw-w64-expat
 Priority: optional
 Maintainer: Tobias Schlemmer <keinstein@users.berlios.de>
 Build-Depends: debhelper (>= 9), autotools-dev
-Standards-Version: 3.9.8
+Build-Depends-Indep: gcc-mingw-w64, g++-mingw-w64 (>= 1.7.1)
+Standards-Version: 4.1.1
 Section: libs
-Homepage: <insert the upstream URL, if relevant>
+Homepage: http://expat.sourceforge.net
 #Vcs-Git: https://anonscm.debian.org/collab-maint/mingw-w64-expat.git
 #Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/mingw-w64-expat.git
 
-Package: mingw-w64-expat-dev
+Package: expat-mingw-w64-dev
 Section: libdevel
+Multi-Arch: same
 Architecture: any
-Depends: mingw-w64-expatBROKEN (= ${binary:Version}), ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: expat1-mingw-w64 (= ${binary:Version}), ${misc:Depends}
+Description: An XML parser library (mingw-w64, development files)
+ This Package contains the development files: headers and libraries.
 
-Package: mingw-w64-expatBROKEN
+Package: expat1-mingw-w64
 Architecture: any
+Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: An XML parser library (mingw-w64, runtime)
+ This Package contains the runtime DLLs.
