@@ -1,0 +1,5 @@
+mingw-w64-expat (2.2.5-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Tobias Schlemmer <keinstein@users.berlios.de>  Thu, 04 Jan 2018 14:09:37 +0100
